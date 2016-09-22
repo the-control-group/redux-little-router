@@ -10,7 +10,7 @@ export default (state: ?Location | Object = {}, action: Action) => {
     if (
       state &&
       state.pathname === action.payload.pathname &&
-      isEqual(state.query, action.payload.isEqual)
+      isEqual(state.query, action.payload.query)
     ) {
       return state;
     }
